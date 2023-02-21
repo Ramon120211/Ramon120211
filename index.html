@@ -8,12 +8,12 @@
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
         <title>Ramon Banus Lopez</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     </head>
     <body>
         <div class="mobile-bar">
             <p>Software Developer / CS Major</p>
             <h1>Ramon Banus Lopez</h1>
+            <i class="fa-solid fa-bars" id="bars" onclick="openmenu()"></i>
         </div>
         <div>
         <nav>
@@ -24,7 +24,6 @@
                 <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" id="bars" onclick="openmenu()"></i>
         </nav>
         </div>
         <div id="header">
@@ -224,12 +223,6 @@
                     }
                 });
                 $('.mobile-bar').css({
-                    opacity: function() {
-                        opacity = ((scrollTop - elementHeight) / mobileHeight);
-                        return opacity;
-                    }
-                });
-                $('#bars').css({
                     opacity: function() {
                         opacity = ((scrollTop - elementHeight) / mobileHeight);
                         return opacity;

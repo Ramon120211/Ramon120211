@@ -12,7 +12,6 @@ html{
 body{
     background: white;
     color: black;
-    font-weight: 400;
 }
 nav{
     display: flex;
@@ -376,11 +375,10 @@ div #abt-col-mobile{
     }
     #bars{
         position: fixed;
-        top: 12px;
+        top: 20px;
         right: 30px;
         font-size: 25px;
         border-radius: 15px;
-        opacity: 0;
     }
     nav ul{
         background: white;
