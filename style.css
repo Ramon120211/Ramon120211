@@ -373,7 +373,7 @@ div #abt-col-mobile{
         padding: 10px;
     }
     #bars{
-        position: absolute;
+        position: fixed;
         top: 18px;
         right: 30px;
         font-size: 25px;
@@ -382,7 +382,7 @@ div #abt-col-mobile{
     nav ul{
         background: white;
         position: fixed;
-        top: -100%;
+        top: -1500px;
         left: 50%;
         margin-top: 5px;
         transform: translate(-50%, 0);
@@ -403,7 +403,7 @@ div #abt-col-mobile{
         font-weight: 800;
     }
     nav ul .fa-solid{
-        position: absolute;
+        position: fixed;
         top: 10px;
         right: 25px;
         cursor: pointer;
