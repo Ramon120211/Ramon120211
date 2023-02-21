@@ -373,6 +373,9 @@ div #abt-col-mobile{
         font-size: 30px;
         padding: 10px;
     }
+    nav .fa-solid:active{
+        border-style: outset;
+    }
     #bars{
         position: fixed;
         top: 20px;
