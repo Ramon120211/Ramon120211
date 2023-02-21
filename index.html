@@ -8,6 +8,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
         <title>Ramon Banus Lopez</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     </head>
     <body>
         <div class="mobile-bar">
@@ -228,16 +229,22 @@
                         return opacity;
                     }
                 });
+                $('#bars').css({
+                    opacity: function() {
+                        opacity = ((scrollTop - elementHeight) / mobileHeight);
+                        return opacity;
+                    }
+                });
             });
         </script>
         <script>
-            var sidemenu = document.getElementById("side-menu")
+            var sidemenu = document.getElementById("side-menu");
 
             function openmenu(){
                 sidemenu.style.top = "0";
             }
             function closemenu(){
-                sidemenu.style.top = "-1000px";
+                sidemenu.style.top = "-1500px";
             }
         </script>
     </body>
