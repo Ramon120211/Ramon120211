@@ -119,10 +119,8 @@ nav ul li a:hover::after{
     padding: 15px;
     line-height: 1.2;
     transition: 0.5s;
-    transform: scale(0.9);
 }
 .abt-col-2 h6:hover{
-    transform: scale(1);
     border-color: #b2c8a1;
 }
 /*      expertise section       */
@@ -444,7 +442,6 @@ div #abt-col-mobile{
     }
     .abt-col-2 h6{
         font-size: 20px;
-        transform: scale(1);
     }
     .abt-col-2 p{
         line-height: 1.6;
