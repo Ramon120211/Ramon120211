@@ -343,7 +343,7 @@ div #abt-col-mobile{
         left: 50%;
         transform: translate(-50%, 0);
         padding: 15px 20px;
-        width: 95%;
+        width: 98%;
         background-color: white;
         border-radius: 15px;
         border: 3px solid black;
@@ -382,7 +382,7 @@ div #abt-col-mobile{
     }
     #bars{
         position: fixed;
-        top: 20px;
+        top: 22px;
         right: 30px;
         font-size: 25px;
         border-radius: 15px;
@@ -394,8 +394,8 @@ div #abt-col-mobile{
         left: 50%;
         margin-top: 0;
         transform: translate(-50%, 0);
-        width: 97%;
-        height: 99vh;
+        width: 98%;
+        height: 55vh;
         padding-top: 50px;
         border: 3px solid black;
         border-radius: 6px;
@@ -414,7 +414,6 @@ div #abt-col-mobile{
         position: fixed;
         top: 10px;
         right: 25px;
-        cursor: pointer;
     }
     .abt-col-1, .abt-col-2{
         flex-basis: 100%;

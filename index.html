@@ -225,6 +225,12 @@
                 $('.mobile-bar').css({
                     opacity: function() {
                         opacity = ((scrollTop - elementHeight) / mobileHeight);
+                        if (opacity >= 1) {
+                            $('.fa-solid').css('pointer-events', 'auto');
+                        }
+                        else {
+                            $('.fa-solid').css('pointer-events', 'none');
+                        }
                         return opacity;
                     }
                 });
@@ -235,9 +241,11 @@
 
             function openmenu(){
                 sidemenu.style.top = "0";
+                $('body').css('overflow', 'hidden');
             }
             function closemenu(){
                 sidemenu.style.top = "-1500px";
+                $('body').css('overflow', 'auto');
             }
         </script>
     </body>
