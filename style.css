@@ -120,9 +120,6 @@ nav ul li a:hover::after{
     line-height: 1.2;
     transition: 0.5s;
 }
-.abt-col-2 h6:hover{
-    border-color: #b2c8a1;
-}
 /*      expertise section       */
 #expertise{
     padding: 80px;
@@ -270,6 +267,23 @@ nav ul li a:hover::after{
     padding: 18px 48px;
     cursor: pointer;
 }
+#lang-desk{
+    display: flex;
+    margin: 0;
+    margin-top: 65px;
+}
+#lang-desk .fa-solid{
+    font-size: 30px;
+}
+#lang-desk p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+#lang-desk a{
+    text-decoration: none;
+    color: black;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -329,11 +343,17 @@ nav .fa-solid{
 .mobile-bar{
     display: none;
 }
+.version{
+    display: none;
+}
 div #proj-col-mobile{
     display: none;
 }
 div #abt-col-mobile{
     display: none;
+}
+.fa-solid{
+    pointer-events: none;
 }
 @media only screen and (max-width: 600px){
     .mobile-bar{
@@ -389,6 +409,24 @@ div #abt-col-mobile{
         font-size: 25px;
         border-radius: 15px;
     }
+    #ex{
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        border-radius: 15px;
+    }
+    #lang{
+        margin-left: 45px;
+        margin-top: 80px;
+        padding: 0;
+    }
+    #lang p{
+        font-size: 19px;
+        font-weight: 800;
+    }
+    #lang i{
+        display: flex;
+    }
     nav ul{
         background: white;
         position: fixed;
@@ -397,13 +435,22 @@ div #abt-col-mobile{
         margin-top: 0;
         transform: translate(-50%, 0);
         width: 100%;
-        height: 55vh;
+        height: 450px;
         padding-top: 50px;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         box-shadow: 0px 1px 10px lightgray;
         z-index: 2;
-    } 
+    }
+    nav ul a{
+        text-decoration: none;
+        color: black;
+        border: none;
+    }
+    nav ul a:hover{
+        border: none;
+        text-decoration: none;
+    }
     nav ul li{
         display: block;
         margin: 20px 50px;
@@ -412,10 +459,8 @@ div #abt-col-mobile{
         font-size: 30px;
         font-weight: 800;
     }
-    nav ul .fa-solid{
-        position: fixed;
-        top: 10px;
-        right: 20px;
+    nav ul li a:hover::after{
+        width: 0;
     }
     .abt-col-1, .abt-col-2{
         flex-basis: 100%;
@@ -459,6 +504,9 @@ div #abt-col-mobile{
         width: 100%;
         padding: 30px;
     }
+    .exp-col:hover{
+        transform: none;
+    }
     #projects{
         padding: 40px;
         padding-top: 80px;
@@ -493,6 +541,9 @@ div #abt-col-mobile{
         display: block;
         padding-bottom: 20px;
     }
+    .download-row a:hover{
+        color: #5d6557;
+    }
     #contact{
         padding: 40px;
         padding-top: 80px;
@@ -509,6 +560,17 @@ div #abt-col-mobile{
     }
     .contact-right form{
         margin-top: 40px;
+    }
+    #social-icons a:hover{
+        color: #17C4BD;
+        transform: none;
+    }
+    .btn:hover{
+        padding: 15px 40px;
+        cursor: pointer;
+    }
+    #lang-desk{
+        display: none;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px){
