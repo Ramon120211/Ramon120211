@@ -348,7 +348,7 @@ div #abt-col-mobile{
         border-bottom-left-radius: 1px;
         border-bottom-right-radius: 1px;
         opacity: 0;
-        box-shadow: 0px 1px 4px lightgray;
+        box-shadow: 0px 1px 4px lightgray, 0px -2px 0px white;
     }
     .mobile-bar h1{
         font-size: 20px;
@@ -399,9 +399,9 @@ div #abt-col-mobile{
         width: 100%;
         height: 55vh;
         padding-top: 50px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        box-shadow: 0px 1px 15px gray;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        box-shadow: 0px 1px 10px lightgray;
         z-index: 2;
     } 
     nav ul li{
