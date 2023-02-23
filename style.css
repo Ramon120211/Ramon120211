@@ -380,7 +380,7 @@ div #abt-col-mobile{
         padding: 10px;
     }
     nav .fa-solid:active{
-        border-style: outset;
+        border: none;
     }
     #bars{
         position: fixed;
