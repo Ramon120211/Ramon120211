@@ -267,23 +267,6 @@ nav ul li a:hover::after{
     padding: 18px 48px;
     cursor: pointer;
 }
-#lang-desk{
-    display: flex;
-    margin: 0;
-    margin-top: 65px;
-}
-#lang-desk .fa-solid{
-    font-size: 30px;
-}
-#lang-desk p{
-    margin: 0;
-    font-size: 20px;
-    font-weight: 800;
-}
-#lang-desk a{
-    text-decoration: none;
-    color: black;
-}
 .contact-left{
     flex-basis: 35%;
 }
@@ -414,18 +397,6 @@ div #abt-col-mobile{
         top: 10px;
         right: 20px;
         border-radius: 15px;
-    }
-    #lang{
-        margin-left: 45px;
-        margin-top: 80px;
-        padding: 0;
-    }
-    #lang p{
-        font-size: 19px;
-        font-weight: 800;
-    }
-    #lang i{
-        display: flex;
     }
     nav ul{
         background: white;
@@ -568,9 +539,6 @@ div #abt-col-mobile{
     .btn:hover{
         padding: 15px 40px;
         cursor: pointer;
-    }
-    #lang-desk{
-        display: none;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px){
