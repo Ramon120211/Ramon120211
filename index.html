@@ -39,7 +39,6 @@
                     <p>Software Developer / Computer Science Major</p>
                     <h1>Ramon Banus Lopez.</h1>
                 </div>
-                <div class="empty"></div>
             </div>
         </div>
         <div id="about">
@@ -125,7 +124,7 @@
                         <h2>Optimization of Virginia Tech Dining Halls</h2>
                         <h3>Project Description</h3>
                         <p>
-                            During the 2022 Fall Semester for my Foundations of Engineering course at Virginia Tech, 
+                            During the 2022 Fall Semester at Virginia Tech, 
                             I was part of a team that provided ways to mitigate heavy traffic at the university's 
                             dining hall facilities.
                         </p>
@@ -213,17 +212,21 @@
             $(window).scroll(function() {
                 var scrollTop = $(this).scrollTop();
                 var elementHeight = 320;
-                var mobileHeight = 50;
+                var mobileHeight = 40;
                 $('.welcome').css({
                     opacity: function() {
                         opacity = ((elementHeight - scrollTop) / elementHeight);
+                        if (opacity < 0)
+                        {
+                            opacity = 0;
+                        }
                         return opacity;
                     }
                 });
                 $('.mobile-bar').css({
                     opacity: function() {
                         opacity = ((scrollTop - elementHeight) / mobileHeight);
-                        if (opacity >= 1) {
+                        if (opacity >= -10) {
                             $('.fa-solid').css('pointer-events', 'auto');
                         }
                         else {

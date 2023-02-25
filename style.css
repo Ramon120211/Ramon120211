@@ -43,13 +43,12 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
-    background: #17C4BD;
+    background: #f1ad9a;
 }
 .welcome{
     margin-top: 30vh;
-    margin-bottom: 15vh;
+    margin-bottom: 50vh;
     text-align: center;
-    position: -webkit-sticky;
 }
 .welcome h1{
     font-size: 60px;
@@ -59,13 +58,11 @@ nav ul li a:hover::after{
     font-size: 30px;
     font-family: 'Monaco', monospace;
 }
-.empty{
-    padding: 10% 0;
-}
 /*      about section     */
 #about{
-    padding: 80px;
-    padding-bottom: 40px;
+   padding: 80px;
+   padding-top: 40px;
+   padding-bottom: 55px;
 }
 .row{
     display: flex;
@@ -131,7 +128,7 @@ nav ul li a:hover::after{
     font-size: 25px;
     font-weight: 800;
     color: black;
-    margin-bottom: 15%;
+    margin-bottom: 35px;
 }
 .exp-col{
     flex-basis: 30%;
@@ -221,7 +218,7 @@ nav ul li a:hover::after{
 .proj-col-alt-1 img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
 }
 .download-row{
@@ -365,7 +362,7 @@ div #abt-col-mobile{
         font-size: 10px;
     }
     .welcome{
-        margin-top: 60%;
+        margin-top: 70%;
         margin-bottom: 80%;
         align-items: center;
         justify-content: center;
@@ -471,7 +468,6 @@ div #abt-col-mobile{
     }
     #expertise{
         padding: 40px;
-        padding-top: 80px;
         padding-bottom: 0;
     }
     .exp-col{
@@ -485,7 +481,6 @@ div #abt-col-mobile{
     }
     #projects{
         padding: 40px;
-        padding-top: 80px;
         padding-bottom: 0;
     }
     .proj-row-1{
@@ -546,10 +541,7 @@ div #abt-col-mobile{
         cursor: pointer;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1024px){
-    .welcome{
-        position: static;
-    }
+@media only screen and (min-width: 600px) and (max-width: 1024px){  
     nav ul li{
         display: inline-block;
         list-style: none;
@@ -603,23 +595,21 @@ div #abt-col-mobile{
     }
     #expertise{
         padding: 40px;
-        padding-top: 80px;
         padding-bottom: 0;
     }
     .exp-col{
-        flex-basis: 48%;
+        flex-basis: 100%;
         margin-bottom: 30px;
         width: 100%;
         padding: 30px;
     }
     #edu-col{
-        flex-basis: 58%;
+        flex-basis: 100%;
         margin-right: auto;
         margin-left: auto;
     }
     #projects{
         padding: 40px;
-        padding-top: 80px;
         padding-bottom: 0;
     }
     .proj-row-1{
@@ -629,31 +619,10 @@ div #abt-col-mobile{
         padding: 20px;
         margin-top: 30px;
     }
-    .proj-col-1{
-        flex-basis: 100%;
-    }
-    .proj-col-2{
-        flex-basis: 60%;
-        margin: auto;
-    }
     #proj-col p{
         line-height: 1.6;
     }
-    .proj-col-alt-1{
-        flex-basis: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .proj-col-alt-2{
-        flex-basis: 100%;
-    }
-    .proj-col-2{
-        display: none;
-    }
-    div #proj-col-mobile{
-        display: block;
-        padding-bottom: 20px;
-    }
+    
     #contact{
         padding: 40px;
         padding-top: 80px;
