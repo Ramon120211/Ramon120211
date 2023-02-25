@@ -175,11 +175,6 @@
         </div>
         <div id="contact">
             <div class="container">
-                <!--
-                <div>
-                    <h1 class="subtitle">contact() {</h1>
-                </div>
-                -->
                 <div class="row" id="contact-row">
                     <div class="contact-left">
                         <h2 id="contact-head">Contact Me</h1>
@@ -194,23 +189,19 @@
                         <a href="files/resume.pdf" target="_blank" download><button class="btn">Download CV</button></a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn">Submit</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
-            <!--
-            <div>
-                <h1 id="squigg">}</h1>
-            </div>
-            -->
         </div>
         <div class="copyright">
-            <p>Copyright @ 2023 Ramon Banus Lopez. All rights reserved.</p>
+            <p>Copyright &copy 2023 Ramon Banus Lopez</p>
         </div>
         <script>
             $(window).scroll(function() {
@@ -249,5 +240,24 @@
                 $('body').css('overflow', 'auto');
             }
         </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyaSYdaMTAK-gBaMETjuYQcIzyxj_JipWGmDBgQemhNPI74bfXiXHaIBrjvKfLawEIfJA/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            const msg = document.getElementById('msg')
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = 'Message sent.'
+                    setTimeout(function(){
+                        msg.innerHTML = ''
+                    },3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error sending message.', error.message))
+            })
+          </script>
     </body>
 </html>

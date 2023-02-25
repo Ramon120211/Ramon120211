@@ -319,6 +319,11 @@ form input, form textarea{
     font-weight: 300;
     margin-top: 20px;
 }
+#msg{
+    color: gray;
+    margin-top: 10px;
+    display: block;
+}
 /*      small screens       */
 nav .fa-solid{
     display: none;
