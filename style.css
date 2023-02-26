@@ -12,12 +12,11 @@ html{
 .bg{
     background-color: rgb(20, 20, 20);
     background-image: url(images/background.png);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
-    z-index: -1;
 }
 .content{
     position: absolute;
@@ -246,9 +245,6 @@ nav ul li a:hover::after{
     margin-right: 5px;
     transition: 0.5s;
 }
-.download-row a:hover{
-    color: rgb(20, 20, 20);
-}
 /*      contact me section      */
 #contact{
     padding: 80px;
@@ -305,10 +301,10 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: 0.5s;
 }
+/*
 #social-icons a:hover{
-    color: rgb(255, 0, 0);
-    transform: translateY(-2px);
-}
+    transform: translateY(-5px);
+}*/
 .contact-right form{
     width: 100%;
 }
@@ -332,7 +328,7 @@ form input, form textarea{
     margin-top: 20px;
 }
 #msg{
-    color: black;
+    color: darkgray;
     margin-top: 10px;
     display: block;
 }
