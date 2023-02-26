@@ -9,19 +9,13 @@
 html{
     scroll-behavior: smooth;
 }
-.bg{
-    background: url(images/background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    width: 100%;
-    transition: height 999999s;
-}
-.content{
-    position: absolute;
-}
 body{
     background-color: rgb(20, 20, 20);
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 nav{
@@ -244,6 +238,9 @@ nav ul li a:hover::after{
     margin-right: 5px;
     transition: 0.5s;
 }
+.download-row a:hover{
+    color: rgb(20, 20, 20);
+}
 /*      contact me section      */
 #contact{
     padding: 80px;
@@ -300,10 +297,10 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: 0.5s;
 }
-/*
 #social-icons a:hover{
-    transform: translateY(-5px);
-}*/
+    color: rgb(255, 0, 0);
+    transform: translateY(-2px);
+}
 .contact-right form{
     width: 100%;
 }
@@ -327,7 +324,7 @@ form input, form textarea{
     margin-top: 20px;
 }
 #msg{
-    color: darkgray;
+    color: black;
     margin-top: 10px;
     display: block;
 }
