@@ -6,19 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/6aa6cb439b.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="icon" href="favicon.ico">
-        <link rel="manifest" href="/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <title>Ramon Banus Lopez | Software Developer, UX Designer</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Ramon Banus Lopez</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="mobile-bar">
-            <p>Software Developer / UX Designer</p>
+            <p>Software Developer / CS Major</p>
             <h1>Ramon Banus Lopez</h1>
             <i class="fa-solid fa-bars" id="bars" onclick="openmenu()"></i>
         </div>
@@ -29,16 +23,17 @@
                 <li><a href="#expertise" onclick="closemenu()">Expertise</a></li>
                 <li><a href="#projects" onclick="closemenu()">Projects</a></li>
                 <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-                <i class="fa-solid fa-xmark" id="ex" onclick="closemenu()"></i>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
         </nav>
         </div>
         <div id="header">
             <div class="container">
                 <div class="welcome">
-                    <p>Software Developer / UX Designer</p>
+                    <p>Software Developer / Computer Science Major</p>
                     <h1>Ramon Banus Lopez.</h1>
                 </div>
+                <div class="empty"></div>
             </div>
         </div>
         <div id="about">
@@ -48,7 +43,7 @@
                         <img src="images/about.jpg">
                     </div>
                     <div class="abt-col-2">
-                        <h1 class="subtitle">about()</h1>
+                        <h1 class="subtitle">about() {</h1>
                         <div class="abt-col-1" id="abt-col-mobile">
                             <img src="images/about.jpg">
                         </div>
@@ -61,18 +56,24 @@
                         <p>
                             My background is centered around Panama, a country that is undoubtedly rich in cultural
                             diversity. Growing up here gave me a special opportunity to meet and work with people from
-                            all over the world, helping me develop a unique way of approaching problems. 
-                            My goal is to contribute and be a part of the technological advancements of the 21st 
+                            all around of the world, while helping me develop a unique way of approaching problems. 
+                            My goal is to both contribute and be a part of the technological advancements of the 21st 
                             century. Making people's lives easier while simultaneously aiding the progress of
                             human evolution. I am primarily interested in software development, machine learning, and 
                             cybersecurity.
                         </p>
+                        <div>
+                            <h1 id="squigg">}</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="expertise">
             <div class="container">
+                <div>
+                    <h1 class="subtitle">expertise() {</h1>
+                </div>
                 <div class="row">
                     <div class="exp-col">
                         <h2>experience()</h2>
@@ -100,12 +101,15 @@
                         </ul>
                     </div>
                 </div>
+                <div>
+                    <h1 id="squigg">}</h1>
+                </div>
             </div>
         </div>
         <div id="projects">
             <div class="container">
                 <div>
-                    <h1 class="subtitle">projects()</h1>
+                    <h1 class="subtitle">projects() {</h1>
                 </div>
                 <div class="proj-row-1">
                     <div class="proj-col-2" id="proj-col-mobile">
@@ -115,7 +119,7 @@
                         <h2>Optimization of Virginia Tech Dining Halls</h2>
                         <h3>Project Description</h3>
                         <p>
-                            During the 2022 Fall Semester at Virginia Tech, 
+                            During the 2022 Fall Semester for my Foundations of Engineering course at Virginia Tech, 
                             I was part of a team that provided ways to mitigate heavy traffic at the university's 
                             dining hall facilities.
                         </p>
@@ -129,7 +133,7 @@
                 </div>
                 <div class="proj-row-2">
                     <div class="proj-col-alt-1" id="proj-col">
-                        <img src="images/project2_dark.png">
+                        <img src="images/project2.png">
                     </div>
                     <div class="proj-col-alt-2" id="proj-col">
                         <h2>Dropz0ne PTY</h2>
@@ -142,7 +146,7 @@
                             at my sole discretion.
                         </p>
                         <div class="download-row">
-                            <a href="https://www.instagram.com/dropzonepty/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/dropzone.pty/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/company/dropz0ne/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
@@ -164,10 +168,18 @@
                     </div>
                 </div>
                 -->
+                <div>
+                    <h1 id="squigg">}</h1>
+                </div>
             </div>
         </div>
         <div id="contact">
             <div class="container">
+                <!--
+                <div>
+                    <h1 class="subtitle">contact() {</h1>
+                </div>
+                -->
                 <div class="row" id="contact-row">
                     <div class="contact-left">
                         <h2 id="contact-head">Contact Me</h1>
@@ -182,32 +194,32 @@
                         <a href="files/resume.pdf" target="_blank" download><button class="btn">Download CV</button></a>
                     </div>
                     <div class="contact-right">
-                        <form name="submit-to-google-sheet">
+                        <form>
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn">Submit</button>
                         </form>
-                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
+            <!--
+            <div>
+                <h1 id="squigg">}</h1>
+            </div>
+            -->
         </div>
         <div class="copyright">
-            <p>Copyright &copy 2023 Ramon Banus Lopez</p>
+            <p>Copyright @ 2023 Ramon Banus Lopez. All rights reserved.</p>
         </div>
         <script>
             $(window).scroll(function() {
                 var scrollTop = $(this).scrollTop();
                 var elementHeight = 320;
-                var mobileHeight = 40;
+                var mobileHeight = 50;
                 $('.welcome').css({
                     opacity: function() {
                         opacity = ((elementHeight - scrollTop) / elementHeight);
-                        if (opacity < 0)
-                        {
-                            opacity = 0;
-                        }
                         return opacity;
                     }
                 });
@@ -237,24 +249,5 @@
                 $('body').css('overflow', 'auto');
             }
         </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyaSYdaMTAK-gBaMETjuYQcIzyxj_JipWGmDBgQemhNPI74bfXiXHaIBrjvKfLawEIfJA/exec'
-            const form = document.forms['submit-to-google-sheet']
-
-            const msg = document.getElementById('msg')
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = 'Message sent.'
-                    setTimeout(function(){
-                        msg.innerHTML = ''
-                    },3000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error sending message.', error.message))
-            })
-          </script>
     </body>
 </html>

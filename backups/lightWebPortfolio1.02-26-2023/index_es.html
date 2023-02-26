@@ -6,39 +6,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/6aa6cb439b.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="icon" href="favicon.ico">
-        <link rel="manifest" href="/site.webmanifest">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <title>Ramon Banus Lopez | Software Developer, UX Designer</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Ramon Banus Lopez</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="mobile-bar">
-            <p>Software Developer / UX Designer</p>
+            <p>Desarrollador de Software / Estudiante en CS</p>
             <h1>Ramon Banus Lopez</h1>
             <i class="fa-solid fa-bars" id="bars" onclick="openmenu()"></i>
         </div>
         <div>
         <nav>
             <ul id="side-menu">
-                <li><a href="#about" onclick="closemenu()">About</a></li>
-                <li><a href="#expertise" onclick="closemenu()">Expertise</a></li>
-                <li><a href="#projects" onclick="closemenu()">Projects</a></li>
-                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <li><a href="#about" onclick="closemenu()">Sobre Mi</a></li>
+                <li><a href="#expertise" onclick="closemenu()">Experiencia</a></li>
+                <li><a href="#projects" onclick="closemenu()">Projectos</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contacto</a></li>
                 <i class="fa-solid fa-xmark" id="ex" onclick="closemenu()"></i>
+                <i class="fa-solid fa-language" id="lang"><p><a href="index.html" onclick="closemenu()">ENG</a></p></i>
             </ul>
         </nav>
         </div>
         <div id="header">
             <div class="container">
                 <div class="welcome">
-                    <p>Software Developer / UX Designer</p>
+                    <p>Desarrollador de Software / Estudiante en Computer Science</p>
                     <h1>Ramon Banus Lopez.</h1>
                 </div>
+                <div class="empty"></div>
             </div>
         </div>
         <div id="about">
@@ -48,76 +44,85 @@
                         <img src="images/about.jpg">
                     </div>
                     <div class="abt-col-2">
-                        <h1 class="subtitle">about()</h1>
+                        <h1 class="subtitle">sobreMi() {</h1>
                         <div class="abt-col-1" id="abt-col-mobile">
                             <img src="images/about.jpg">
                         </div>
                         <div class="quote">
                             <h6 id="abt-quote">
-                                "I'm a detail-oriented, highly-driven CS major with a knack for working 
-                                on computers, electronics, and general problem solving."
+                                "Soy un estudiante de informática detallista y destacado, con un afín para 
+                                trabajar con computadoras, electrónicos y la solución de problemas."
                             </h6>
                         </div>
                         <p>
-                            My background is centered around Panama, a country that is undoubtedly rich in cultural
-                            diversity. Growing up here gave me a special opportunity to meet and work with people from
-                            all over the world, helping me develop a unique way of approaching problems. 
-                            My goal is to contribute and be a part of the technological advancements of the 21st 
-                            century. Making people's lives easier while simultaneously aiding the progress of
-                            human evolution. I am primarily interested in software development, machine learning, and 
-                            cybersecurity.
+                            Mi formación es centrada en Panamá, un país que sin duda es rico en diversidad 
+                            cultural. Crecer en este ambiente me dió una oportunidad única para conocer y trabajar con personas 
+                            de todas partes del mundo, mientras también me ayudó a desarrollar una manera muy particular 
+                            para abordar problemas. Mi propósito es contribuir y ser parte de los avances tecnológicos del 
+                            siglo veintiuno. Haciendo que la vida de las personas sea más sencilla y facilitar el progreso 
+                            de la evolución. Estoy interesado en las áreas de desarrollo de software, machine learning y 
+                            cíberseguridad.
                         </p>
+                        <div>
+                            <h1 id="squigg">}</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="expertise">
             <div class="container">
+                <div>
+                    <h1 class="subtitle">experiencia() {</h1>
+                </div>
                 <div class="row">
                     <div class="exp-col">
-                        <h2>experience()</h2>
+                        <h2>trabajo()</h2>
                         <ul>
-                            <li><span>2021 - Current</span><br>Founder <br> Dropz0ne PTY</li>
-                            <li><span>2022</span><br>Collections Agent <br> Alorica</li>
-                            <li><span>2020</span><br>Video Producer <br> VooDoo Lounge</li>
-                            <li><span>2018</span><br>Desk Assistant <br> Fifty Five Fashion</li>
+                            <li><span>2021 - Presente</span><br>Creador <br> Dropz0ne PTY</li>
+                            <li><span>2022</span><br>Agente de Cobros <br> Alorica</li>
+                            <li><span>2020</span><br>Productor de Video <br> VooDoo Lounge</li>
+                            <li><span>2018</span><br>Asistente <br> Fifty Five Fashion</li>
                         </ul>
                     </div>
                     <div class="exp-col">
-                        <h2>skills()</h2>
+                        <h2>habilidades()</h2>
                         <ul>
-                            <li><span>Web Development</span><br>HTML, CSS, and Javascript</li>
-                            <li><span>Object-Oriented Programming</span><br>C#/C++ and Python</li>
-                            <li><span>CAD Modeling</span><br>SolidWorks, Blender, and Cinema4D</li>
-                            <li><span>Engineering</span><br>Operating Systems, Computer Hardware, and Soldering Electronics</li>
+                            <li><span>Desarrollo Web</span><br>HTML, CSS y Javascript</li>
+                            <li><span>Programmación</span><br>C#/C++ y Python</li>
+                            <li><span>Modelos CAD</span><br>SolidWorks, Blender y Cinema4D</li>
+                            <li><span>Ingeniería</span><br>Sistemas Operativos, Hardware de Computadoras y Soldadura de Electrónicos</li>
                         </ul>
                     </div>
                     <div class="exp-col" id="edu-col">
-                        <h2>education()</h2>
+                        <h2>educación()</h2>
                         <ul>
-                            <li><span>2022 - Current</span><br>B.S. Computer Science <br> Virginia Tech</li>
+                            <li><span>2022 - Presente</span><br>B.S. Computer Science <br> Virginia Tech</li>
                             <li><span>2020 - 2022</span><br>Florida State University</li>
                         </ul>
                     </div>
+                </div>
+                <div>
+                    <h1 id="squigg">}</h1>
                 </div>
             </div>
         </div>
         <div id="projects">
             <div class="container">
                 <div>
-                    <h1 class="subtitle">projects()</h1>
+                    <h1 class="subtitle">projectos() {</h1>
                 </div>
                 <div class="proj-row-1">
                     <div class="proj-col-2" id="proj-col-mobile">
                         <img src="images/project1.jpeg">
                     </div>
                     <div class="proj-col-1" id="proj-col">
-                        <h2>Optimization of Virginia Tech Dining Halls</h2>
-                        <h3>Project Description</h3>
+                        <h2>Optimización de Comedores en Virginia Tech</h2>
+                        <h3>Descripción</h3>
                         <p>
-                            During the 2022 Fall Semester at Virginia Tech, 
-                            I was part of a team that provided ways to mitigate heavy traffic at the university's 
-                            dining hall facilities.
+                            Durante el semestre de Fall del 2022, para mi curso de ingeniería en Virginia Tech, formé
+                            parte de un equipo que presentó maneras de mitigar el tráfico pesado de personas en los 
+                            comedores universitarios.
                         </p>
                         <div class="download-row">
                             <a href="files/brochureVT.pdf" download target="_blank"><i class="fa-regular fa-file-pdf"></i></a>
@@ -129,17 +134,15 @@
                 </div>
                 <div class="proj-row-2">
                     <div class="proj-col-alt-1" id="proj-col">
-                        <img src="images/project2_dark.png">
+                        <img src="images/project2.png">
                     </div>
                     <div class="proj-col-alt-2" id="proj-col">
                         <h2>Dropz0ne PTY</h2>
-                        <h3>Project Description</h3>
+                        <h3>Descripción</h3>
                         <p>
-                            A small business I started centered around helping clients with their technical 
-                            problems. It involved tech support, managing appointments, and performing complete 
-                            overhauls on clients' computers and/or other electronic devices. All design process, 
-                            publication of digital media, and implementation for this business was done 
-                            at my sole discretion.
+                            Un negocio que enfoca en ayudar a clientes con sus problemas técnicos. Involucra 
+                            soporte técnico, administración de citas y revisión completa de los equipos de los clientes. 
+                            Toda publicación digital e implementación de este negocio fueron hechas a mi discreción.
                         </p>
                         <div class="download-row">
                             <a href="https://www.instagram.com/dropzonepty/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -164,13 +167,21 @@
                     </div>
                 </div>
                 -->
+                <div>
+                    <h1 id="squigg">}</h1>
+                </div>
             </div>
         </div>
         <div id="contact">
             <div class="container">
+                <!--
+                <div>
+                    <h1 class="subtitle">contact() {</h1>
+                </div>
+                -->
                 <div class="row" id="contact-row">
                     <div class="contact-left">
-                        <h2 id="contact-head">Contact Me</h1>
+                        <h2 id="contact-head">Contacto</h1>
                         <p><i class="fa-solid fa-paper-plane"></i>ramon.banus@hotmail.com</p>
                         <p><i class="fa-solid fa-phone"></i>+507 6808-8012</p>
                         <div id="social-icons">
@@ -179,35 +190,41 @@
                             <!--<a href=""><i class="fa-brands fa-instagram"></i></a>-->
                             <a href="https://www.linkedin.com/in/ramon1202" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
-                        <a href="files/resume.pdf" target="_blank" download><button class="btn">Download CV</button></a>
+                        <a href="files/resume.pdf" target="_blank" download><button class="btn">Descargar HV</button></a>
+                        <div id="lang-desk">
+                            <a href="index.html">
+                            <i class="fa-solid fa-language" id="lang"></i>
+                            <p>ENG</p>
+                            </a>
+                        </div>
                     </div>
                     <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn">Submit</button>
+                        <form>
+                            <input type="text" name="Name" placeholder="Nombre" required>
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                            <textarea name="Message" rows="6" placeholder="Mensaje"></textarea>
+                            <button type="submit" class="btn">Enviar</button>
                         </form>
-                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
+            <!--
+            <div>
+                <h1 id="squigg">}</h1>
+            </div>
+            -->
         </div>
         <div class="copyright">
-            <p>Copyright &copy 2023 Ramon Banus Lopez</p>
+            <p>Copyright @ 2023 Ramon Banus Lopez. Todos los derechos reservados.</p>
         </div>
         <script>
             $(window).scroll(function() {
                 var scrollTop = $(this).scrollTop();
                 var elementHeight = 320;
-                var mobileHeight = 40;
+                var mobileHeight = 50;
                 $('.welcome').css({
                     opacity: function() {
                         opacity = ((elementHeight - scrollTop) / elementHeight);
-                        if (opacity < 0)
-                        {
-                            opacity = 0;
-                        }
                         return opacity;
                     }
                 });
@@ -237,24 +254,5 @@
                 $('body').css('overflow', 'auto');
             }
         </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyaSYdaMTAK-gBaMETjuYQcIzyxj_JipWGmDBgQemhNPI74bfXiXHaIBrjvKfLawEIfJA/exec'
-            const form = document.forms['submit-to-google-sheet']
-
-            const msg = document.getElementById('msg')
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = 'Message sent.'
-                    setTimeout(function(){
-                        msg.innerHTML = ''
-                    },3000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error sending message.', error.message))
-            })
-          </script>
     </body>
 </html>

@@ -10,27 +10,23 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: black;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
+    background: white;
+    color: black;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(20, 20, 20, 0.8);
 }
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 15px 20px;
-    opacity: 1;
+    opacity: 1.0;
 }
 nav ul li a{
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -44,7 +40,6 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
-    border-radius: 15px;
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -68,7 +63,6 @@ nav ul li a:hover::after{
    padding: 80px;
    padding-top: 40px;
    padding-bottom: 55px;
-   background-color: rgb(20, 20, 20);
 }
 .row{
     display: flex;
@@ -88,14 +82,14 @@ nav ul li a:hover::after{
     font-family: 'Monaco', monospace;
     font-size: 20px;
     font-weight: 800;
-    color: white;
+    color: black;
     margin-bottom: 5%;
 }
 #squigg {
     font-family: 'Monaco', monospace;
     font-size: 20px;
     font-weight: 800;
-    color: white;
+    color: black;
     margin-top: 5%;
 }
 .abt-col-2{
@@ -113,8 +107,8 @@ nav ul li a:hover::after{
 .abt-col-2 h6{
     font-weight: 400;
     font-size: 30px;
-    color: white;
-    background-image: url(images/background.png);
+    color: black;
+    background-color: #f1ad9a;
     border-width: 0;
     border-style: solid;
     border-color: #D1E2C4;
@@ -125,20 +119,21 @@ nav ul li a:hover::after{
 }
 /*      expertise section       */
 #expertise{
-    padding: 100px 80px;
-    color: white
+    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 0;
 }
 #expertise h2{
     font-family: 'Monaco', monospace;
     font-size: 25px;
     font-weight: 800;
-    color: white;
+    color: black;
     margin-bottom: 35px;
 }
 .exp-col{
     flex-basis: 30%;
     padding: 50px;
-    background-color: rgb(20,20,20);
+    background-color: #F0EAD6;
     border-width: 0;
     border-style: solid;
     border-color: #D1E2C4;
@@ -156,7 +151,7 @@ nav ul li a:hover::after{
     font-weight: 300;
 }
 #expertise span{
-    color: rgb(183, 2, 2);
+    color: black;
     font-size: 14px;
     font-weight: 600;
 }
@@ -165,17 +160,16 @@ nav ul li a:hover::after{
     padding: 80px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: rgb(20, 20, 20);
 }
 .proj-row-1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url(images/background.png);
+    background: #F0EAD6;
     padding: 60px;
     border-width: 0;
     border-style: solid;
-    border-color: black;
+    border-color: lightskyblue;
     border-radius: 15px;
     transition: 0.5s;
 }
@@ -183,7 +177,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url(images/background.png);
+    background: #F0EAD6;
     padding: 60px;
     margin-top: 4%;
     border-width: 0;
@@ -224,7 +218,7 @@ nav ul li a:hover::after{
 .proj-col-alt-1 img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
 }
 .download-row{
@@ -232,12 +226,12 @@ nav ul li a:hover::after{
 }
 .download-row a{
     font-size: 35px;
-    color: darkgray;
+    color: #5d6557;
     margin-right: 5px;
     transition: 0.5s;
 }
 .download-row a:hover{
-    color: rgb(20, 20, 20);
+    color: #31352E;
 }
 /*      contact me section      */
 #contact{
@@ -262,9 +256,9 @@ nav ul li a:hover::after{
     padding: 15px 40px;
     margin-top: 60px;
     color: white;
-    background-color: rgb(183, 2, 2);
+    background-color: #4E1860;
     transition: 0.5s;
-    border-color: black;
+    border-color: #4E1860;
 }
 .btn:hover{
     padding: 18px 48px;
@@ -280,7 +274,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: darkgray;
+    color: #17C4BD;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -291,12 +285,13 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: darkgray;
+    color: #17C4BD;
     display: inline-block;
     transition: 0.5s;
 }
+
 #social-icons a:hover{
-    color: rgb(255, 0, 0);
+    color: #4E1860;
     transform: translateY(-2px);
 }
 .contact-right form{
@@ -306,10 +301,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: rgb(0, 0, 0, 0.5);
+    background: whitesmoke;
     padding: 15px;
     margin: 15px 0;
-    color: whitesmoke;
+    color: black;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -317,12 +312,12 @@ form input, form textarea{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background-color: rgb(20, 20, 20, 0.8);
+    background: whitesmoke;
     font-weight: 300;
     margin-top: 20px;
 }
 #msg{
-    color: black;
+    color: gray;
     margin-top: 10px;
     display: block;
 }
@@ -354,11 +349,11 @@ div #abt-col-mobile{
         transform: translate(-50%, 0);
         padding: 15px 20px;
         width: 100%;
-        background-color: rgb(20, 20, 20, 1);
+        background-color: white;
         border-bottom-left-radius: 1px;
         border-bottom-right-radius: 1px;
         opacity: 0;
-        box-shadow: 0px 1px 4px black, 0px -2px 0px rgb(20, 20, 20, 0.98);
+        box-shadow: 0px 1px 4px lightgray, 0px -2px 0px white;
     }
     .mobile-bar h1{
         font-size: 20px;
@@ -367,8 +362,8 @@ div #abt-col-mobile{
         font-size: 10px;
     }
     .welcome{
-        margin-top: 80%;
-        margin-bottom: 120%;
+        margin-top: 70%;
+        margin-bottom: 80%;
         align-items: center;
         justify-content: center;
         position: static;
@@ -406,6 +401,7 @@ div #abt-col-mobile{
         border-radius: 15px;
     }
     nav ul{
+        background: white;
         position: fixed;
         top: -1500px;
         left: 50%;
@@ -414,10 +410,9 @@ div #abt-col-mobile{
         width: 100%;
         height: 450px;
         padding-top: 50px;
-        background-color: rgb(20, 20, 20);
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
-        box-shadow: 0px 1px 10px black;
+        box-shadow: 0px 1px 10px lightgray;
         z-index: 2;
     }
     nav ul a{
@@ -445,8 +440,11 @@ div #abt-col-mobile{
     }
     #about{
         padding: 40px;
+        padding-top: 80px;
+        padding-bottom: 0;
     }
     .subtitle{
+        margin-top: 12px;
         margin-bottom: 30px;
         font-size: 20px;
     }
@@ -470,6 +468,7 @@ div #abt-col-mobile{
     }
     #expertise{
         padding: 40px;
+        padding-bottom: 0;
     }
     .exp-col{
         flex-basis: 100%;
@@ -482,15 +481,14 @@ div #abt-col-mobile{
     }
     #projects{
         padding: 40px;
+        padding-bottom: 0;
     }
     .proj-row-1{
         padding: 20px;
-        background-size: cover;
     }
     .proj-row-2{
         padding: 20px;
         margin-top: 30px;
-        background-size: cover;
     }
     .proj-col-1{
         flex-basis: 100%;
@@ -500,9 +498,6 @@ div #abt-col-mobile{
     }
     #proj-col p{
         line-height: 1.6;
-    }
-    #proj-col h2{
-        padding-top: 20px;
     }
     .proj-col-alt-1{
         flex-basis: 100%;
@@ -515,12 +510,15 @@ div #abt-col-mobile{
     }
     div #proj-col-mobile{
         display: block;
+        padding-bottom: 20px;
     }
     .download-row a:hover{
         color: #5d6557;
     }
     #contact{
         padding: 40px;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
     .contact-left{
         flex-basis: 100%;
@@ -551,7 +549,10 @@ div #abt-col-mobile{
         opacity: 1.0;
     }
     nav ul li a{
+        color: black;
+        text-decoration: none;
         font-size: 16px;
+        position: relative;
     }
     .welcome h1{
         font-size: 50px;
@@ -573,6 +574,8 @@ div #abt-col-mobile{
     }
     #about{
         padding: 40px;
+        padding-top: 100px;
+        padding-bottom: 0;
     }
     .subtitle{
         margin-top: 12px;
@@ -592,6 +595,7 @@ div #abt-col-mobile{
     }
     #expertise{
         padding: 40px;
+        padding-bottom: 0;
     }
     .exp-col{
         flex-basis: 100%;
@@ -599,8 +603,14 @@ div #abt-col-mobile{
         width: 100%;
         padding: 30px;
     }
+    #edu-col{
+        flex-basis: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
     #projects{
         padding: 40px;
+        padding-bottom: 0;
     }
     .proj-row-1{
         padding: 20px;
@@ -612,8 +622,11 @@ div #abt-col-mobile{
     #proj-col p{
         line-height: 1.6;
     }
+    
     #contact{
         padding: 40px;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
     .contact-left{
         flex-basis: 40%;
@@ -625,13 +638,12 @@ div #abt-col-mobile{
         margin-top: 15%;
     }
 }
-/*      ipad portrait       */
 @media only screen and (min-width: 600px) and (max-width: 1024px) and (min-height: 1024px){
     .welcome{
     position: static;
-    margin-top: 40vh;
-    margin-bottom: 50vh;
-    align-items: center;
-    justify-content: center;
+        margin-top: 35vh;
+        margin-bottom: 30vh;
+        align-items: center;
+        justify-content: center;
     }
 }
