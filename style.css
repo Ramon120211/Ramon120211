@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: black;
+    background-color: rgb(20, 20, 20);
     background-image: url(images/background.png);
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(20, 20, 20, 0.8);
+    background-color: rgb(20, 20, 20);
 }
 nav ul li{
     display: inline-block;
