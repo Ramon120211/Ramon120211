@@ -9,11 +9,21 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+.bg{
     background-color: rgb(20, 20, 20);
     background-image: url(images/background.png);
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+}
+.content{
+    position: absolute;
+}
+body{
+    background-color: rgb(20, 20, 20);
     color: white;
 }
 nav{
