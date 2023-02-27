@@ -172,6 +172,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
     background-image: url(images/background.png);
+    background-size: cover;
     padding: 60px;
     border-width: 0;
     border-style: solid;
@@ -184,6 +185,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
     background-image: url(images/background.png);
+    background-size: cover;
     padding: 60px;
     margin-top: 4%;
     border-width: 0;
@@ -633,5 +635,35 @@ div #abt-col-mobile{
     margin-bottom: 50vh;
     align-items: center;
     justify-content: center;
+    }
+}
+@media only screen and (min-width: 1520px){
+    #about{
+        padding: 75px 300px;
+        padding-top: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-bottom: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-right: calc(300px + (100vw - 1920px) * (75-150) / 200);
+        padding-left: calc(300px + (100vw - 1920px) * (75-150) / 200);
+    }
+    #expertise{
+        padding: 75px 300px;
+        padding-top: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-bottom: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-right: calc(300px + (100vw - 1920px) * (75-150) / 200);
+        padding-left: calc(300px + (100vw - 1920px) * (75-150) / 200);
+    }
+    #projects{
+        padding: 75px 300px;
+        padding-top: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-bottom: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-right: calc(300px + (100vw - 1920px) * (75-150) / 200);
+        padding-left: calc(300px + (100vw - 1920px) * (75-150) / 200);
+    }
+    #contact{
+        padding: 75px 300px;
+        padding-top: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-bottom: calc(75px + (100vw - 1920px) * (75-150) / 800);
+        padding-right: calc(300px + (100vw - 1920px) * (75-150) / 200);
+        padding-left: calc(300px + (100vw - 1920px) * (75-150) / 200);
     }
 }
