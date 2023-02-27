@@ -11,7 +11,7 @@ html{
 }
 body{
     background-color: rgb(20, 20, 20);
-    background-image: url(images/background.png);
+    background-image: url(images/background.webp);
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -114,7 +114,7 @@ nav ul li a:hover::after{
     font-weight: 400;
     font-size: 30px;
     color: white;
-    background-image: url(images/background.png);
+    background-image: url(images/background.webp);
     border-width: 0;
     border-style: solid;
     border-color: #D1E2C4;
@@ -171,7 +171,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url(images/background.png);
+    background-image: url(images/background.webp);
     background-size: cover;
     padding: 60px;
     border-width: 0;
@@ -184,7 +184,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url(images/background.png);
+    background-image: url(images/background.webp);
     background-size: cover;
     padding: 60px;
     margin-top: 4%;
