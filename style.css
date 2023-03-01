@@ -461,6 +461,9 @@ div #abt-col-mobile{
         display: block;
         margin-bottom: 20px;
     }
+    .abt-title h1{
+        display: none;
+    }
     .abt-col-2 h6{
         font-size: 20px;
     }
