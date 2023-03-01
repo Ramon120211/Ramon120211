@@ -237,7 +237,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .download-row a:hover{
-    color: rgb(20, 20, 20);
+    color: whitesmoke;
 }
 /*      contact me section      */
 #contact{
@@ -322,7 +322,7 @@ form input, form textarea{
     margin-top: 20px;
 }
 #msg{
-    color: black;
+    color: darkgray;
     margin-top: 10px;
     display: block;
 }
