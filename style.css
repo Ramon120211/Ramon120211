@@ -372,8 +372,10 @@ div #abt-col-mobile{
     }
     body{
         background-color: rgb(20, 20, 20);
-        background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #042e98 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #2b1075 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
-        background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
+        background: linear-gradient(180deg, rgb(10, 10, 10) 0%, #c92a2a 65%, rgb(8, 8, 56) 80%, rgb(10,10,10) 100%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         color: white;
     }
     .mobile-bar{
@@ -521,10 +523,12 @@ div #abt-col-mobile{
     }
     #projects{
         padding: 40px;
+        background-color: rgb(20, 20, 20, 1);
     }
     .proj-row-1{
         padding: 20px;
         background: linear-gradient(45deg, #0a0219 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+        margin-top: 0;
         background-size: cover;
     }
     .proj-row-2{
