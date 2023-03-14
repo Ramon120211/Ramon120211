@@ -364,6 +364,17 @@ div #abt-col-mobile{
     pointer-events: none;
 }
 @media only screen and (max-width: 600px){
+    .content{
+        position: static;
+    }
+    body{
+        background-color: rgb(20, 20, 20);
+        background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #00071A 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #FF00A8 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
+        background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
     .mobile-bar{
         display: block;
         position: fixed;
@@ -372,7 +383,7 @@ div #abt-col-mobile{
         transform: translate(-50%, 0);
         padding: 15px 20px;
         width: 100%;
-        background-color: rgb(20, 20, 20, 0.85);
+        background-color: rgb(20, 20, 20, 1);
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
         border-bottom-left-radius: 1px;
@@ -436,6 +447,7 @@ div #abt-col-mobile{
         padding-top: 50px;
         background-color: rgb(20, 20, 20, 0.85);
         backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
         box-shadow: 0px 1px 10px black;
