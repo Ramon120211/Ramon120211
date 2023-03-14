@@ -181,26 +181,18 @@ nav ul li a:hover::after{
     padding: 60px 80px;
     background-color: rgb(20, 20, 20, 0.8);
 }
-.proj-row-1{
+.proj-row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: linear-gradient(45deg, #00042b 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+    background: linear-gradient(45deg, #0a0219 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
     background-blend-mode: screen, overlay, hard-light, normal;
     background-size: cover;
     padding: 60px;
     border-radius: 15px;
 }
-.proj-row-2{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: linear-gradient(45deg, #00042b 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-    background-blend-mode: screen, overlay, hard-light, normal;
-    background-size: cover;
-    padding: 60px;
+#final-row{
     margin-top: 4%;
-    border-radius: 15px;
 }
 .proj-col-1{
     flex-basis: 44%;
@@ -346,10 +338,10 @@ nav .fa-solid{
 .version{
     display: none;
 }
-div #proj-col-mobile{
+#proj-col-mobile{
     display: none;
 }
-div #abt-col-mobile{
+#abt-col-mobile{
     display: none;
 }
 .fa-solid{
@@ -362,7 +354,7 @@ div #abt-col-mobile{
     .content{
         position: static;
         background-color: rgb(20, 20, 20);
-        background: linear-gradient(180deg, rgb(10, 10, 10) 0%, #c92a2a 65%, rgb(8, 8, 56) 80%, rgb(10,10,10) 100%);
+        background: linear-gradient(180deg, rgb(6, 3, 26) 0%, #c92a2a 40%, rgb(100, 58, 13) 80%, rgb(5, 4, 39) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -519,16 +511,11 @@ div #abt-col-mobile{
         padding: 40px;
         background-color: rgb(20, 20, 20, 1);
     }
-    .proj-row-1{
+    .proj-row{
         padding: 20px;
-        background: linear-gradient(45deg, #0a0219 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-        background-size: cover;
     }
-    .proj-row-2{
-        padding: 20px;
-        background: linear-gradient(45deg, #0a0219 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+    #final-row{
         margin-top: 30px;
-        background-size: cover;
     }
     .proj-col-1{
         flex-basis: 100%;
@@ -551,7 +538,7 @@ div #abt-col-mobile{
     .proj-col-2{
         display: none;
     }
-    div #proj-col-mobile{
+    #proj-col-mobile{
         display: block;
     }
     .download-row a:hover{
