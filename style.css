@@ -84,7 +84,7 @@ nav ul li a:hover::after{
    padding: 80px;
    padding-top: 40px;
    padding-bottom: 55px;
-   background-color: rgb(20, 20, 20, 0.8);
+   background-color: rgb(20, 20, 20, 0.65);
 }
 .row{
     display: flex;
@@ -154,7 +154,7 @@ nav ul li a:hover::after{
 .exp-col{
     flex-basis: 30%;
     padding: 50px;
-    background-color: rgb(20, 20, 20, 0.8);
+    background-color: rgb(20, 20, 20, 0.65);
     border-width: 0;
     border-style: solid;
     border-color: #D1E2C4;
@@ -179,7 +179,7 @@ nav ul li a:hover::after{
 /*      projects section        */
 #projects{
     padding: 60px 80px;
-    background-color: rgb(20, 20, 20, 0.8);
+    background-color: rgb(20, 20, 20, 0.65);
 }
 .proj-row{
     display: flex;
@@ -319,7 +319,7 @@ form input, form textarea{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background-color: rgb(20, 20, 20, 0.8);
+    background-color: rgb(20, 20, 20, 0.65);
     font-weight: 300;
     margin-top: 20px;
 }
@@ -584,6 +584,9 @@ nav .fa-solid{
     nav ul li a{
         font-size: 16px;
     }
+    nav ul li a:hover::after{
+        width: 0%;
+    }
     .welcome h1{
         font-size: 50px;
     }
@@ -603,7 +606,7 @@ nav .fa-solid{
         border-radius: 15px;
     }
     #about{
-        padding: 40px;
+        padding: 30px;
     }
     .subtitle{
         margin-top: 12px;
@@ -622,26 +625,45 @@ nav .fa-solid{
         padding-bottom: 10px;
     }
     #expertise{
-        padding: 40px;
+        padding: 40px 25px;
     }
     .exp-col{
-        flex-basis: 100%;
-        margin-bottom: 30px;
+        flex-basis: 30%;
         width: 100%;
-        padding: 30px;
+        padding: 25px;
     }
     #projects{
+        padding: 40px 25px;
+    }
+    .proj-row{
         padding: 40px;
     }
-    .proj-row-1{
-        padding: 20px;
-    }
-    .proj-row-2{
-        padding: 20px;
+    #final-row{
         margin-top: 30px;
     }
     #proj-col p{
         line-height: 1.6;
+    }
+    #proj-col h2{
+        margin-top: 40px;
+    }
+    .proj-col-1{
+        flex-basis: 100%;
+    }
+    .proj-col-2{
+        display: none;
+    }
+    #proj-col-mobile{
+        display: flex;
+        flex-basis: 100%;
+        padding: 0px 40px;
+    }
+    .proj-col-alt-1{
+        flex-basis: 100%;
+        padding: 0px 40px;
+    }
+    .proj-col-alt-2{
+        flex-basis: 100%;
     }
     #contact{
         padding: 40px;
