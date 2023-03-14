@@ -189,11 +189,7 @@ nav ul li a:hover::after{
     background-blend-mode: screen, overlay, hard-light, normal;
     background-size: cover;
     padding: 60px;
-    border-width: 0;
-    border-style: solid;
-    border-color: black;
     border-radius: 15px;
-    transition: 0.5s;
 }
 .proj-row-2{
     display: flex;
@@ -204,11 +200,7 @@ nav ul li a:hover::after{
     background-size: cover;
     padding: 60px;
     margin-top: 4%;
-    border-width: 0;
-    border-style: solid;
-    border-color: lightskyblue;
     border-radius: 15px;
-    transition: 0.5s;
 }
 .proj-col-1{
     flex-basis: 44%;
@@ -369,13 +361,14 @@ div #abt-col-mobile{
     }
     .content{
         position: static;
-    }
-    body{
         background-color: rgb(20, 20, 20);
         background: linear-gradient(180deg, rgb(10, 10, 10) 0%, #c92a2a 65%, rgb(8, 8, 56) 80%, rgb(10,10,10) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    body{
+        background-color: rgb(20, 20, 20);;
         color: white;
     }
     .mobile-bar{
@@ -401,7 +394,8 @@ div #abt-col-mobile{
         font-size: 10px;
     }
     .welcome{
-        margin-top: 65%;
+        margin-top: 0;
+        padding-top: 65%;
         margin-bottom: 120%;
         align-items: center;
         justify-content: center;
@@ -528,7 +522,6 @@ div #abt-col-mobile{
     .proj-row-1{
         padding: 20px;
         background: linear-gradient(45deg, #0a0219 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #c86c15 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-        margin-top: 0;
         background-size: cover;
     }
     .proj-row-2{
