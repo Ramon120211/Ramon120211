@@ -513,6 +513,9 @@ nav .fa-solid{
     }
     .proj-row{
         padding: 20px;
+        background-image: url(images/background.webp);
+        background-size: cover;
+        background-position: center;
     }
     #final-row{
         margin-top: 30px;
