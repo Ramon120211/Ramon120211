@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/6aa6cb439b.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>        
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -217,65 +217,6 @@
                 <p>Copyright &copy 2023 Ramon Banus Lopez</p>
             </div>
         </div>
-        <script>
-            $(window).scroll(function() {
-                var scrollTop = $(this).scrollTop();
-                var elementHeight = 320;
-                var mobileHeight = 40;
-                $('.welcome').css({
-                    opacity: function() {
-                        opacity = ((elementHeight - scrollTop) / elementHeight);
-                        if (opacity < 0)
-                        {
-                            opacity = 0;
-                        }
-                        return opacity;
-                    }
-                });
-                $('.mobile-bar').css({
-                    opacity: function() {
-                        opacity = ((scrollTop - elementHeight) / mobileHeight);
-                        if (opacity >= 1) {
-                            $('.fa-solid').css('pointer-events', 'auto');
-                        }
-                        else {
-                            $('.fa-solid').css('pointer-events', 'none');
-                        }
-                        return opacity;
-                    }
-                });
-            });
-        </script>
-        <script>
-            var sidemenu = document.getElementById("side-menu");
-
-            function openmenu(){
-                sidemenu.style.top = "0";
-                $('body').css('overflow', 'hidden');
-            }
-            function closemenu(){
-                sidemenu.style.top = "-1500px";
-                $('body').css('overflow', 'auto');
-            }
-        </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyaSYdaMTAK-gBaMETjuYQcIzyxj_JipWGmDBgQemhNPI74bfXiXHaIBrjvKfLawEIfJA/exec'
-            const form = document.forms['submit-to-google-sheet']
-
-            const msg = document.getElementById('msg')
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = 'Message sent.'
-                    setTimeout(function(){
-                        msg.innerHTML = ''
-                    },3000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error sending message.', error.message))
-            })
-          </script>
+        <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
