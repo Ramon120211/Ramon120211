@@ -81,9 +81,7 @@ nav ul li a:hover::after{
 }
 /*      about section     */
 #about{
-   padding: 80px;
-   padding-top: 40px;
-   padding-bottom: 55px;
+   padding: 40px 80px;
    background-color: rgb(20, 20, 20, 0.65);
 }
 .row{
@@ -100,19 +98,16 @@ nav ul li a:hover::after{
     object-fit: cover;
     border-radius: 15px;
 }
+.abt-title h1{
+    font-size: 42px;
+    margin-bottom: 30px;
+}
 .subtitle{
     font-family: 'Monaco', monospace;
     font-size: 20px;
     font-weight: 800;
     color: white;
     margin-bottom: 5%;
-}
-#squigg {
-    font-family: 'Monaco', monospace;
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    margin-top: 5%;
 }
 .abt-col-2{
     flex-basis: 60%;
